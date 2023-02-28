@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://cateringku.eu.org/sitemap.xml

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+* {
+    font-family: 'Sniglet', cursive;
+}
+#header {
+    margin: auto;
+    margin-bottom: 30px;
+    justify-content: space-evenly;;
+}
+
+.logoheader {
+    width: 30px;
+    height: 30px;
+}
+
+.logo {
+    border: 3px solid #fff;
+    margin-bottom: 5%;
+    width: 25%;
+    height: 25%;
+}
+
+.card-text {
+    color: #212529BF;
+}
+
+.bi-star-fill {
+    color: rgb(235, 235, 39);
+}
+
+.penutup {
+    color: #fff;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.animated-icon {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 320px) {
+    .produk {
+        display: block;
+    }
+
+    .footeratas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .produk {
+        display: block;
+    }
+
+    .footeratas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 576px) {
+    .produk {
+        display: block;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .produk {
+        display: block;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .produk {
+        display: flex;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .produk {
+        display: flex;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .produk {
+        display: flex;
+    }
+}

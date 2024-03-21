@@ -56,8 +56,8 @@
 
   <!-- header -->
   <section id="header">
-    <div class="container-fluid bg-success fixed-top">
-      <header class="d-flex flex-wrap py-2">
+    <div class="bg-success fixed-top">
+      <header class="container d-flex flex-wrap py-2">
         <a href="/" class="d-flex align-items-center mb-0 mb-md-0 me-md-auto bg text-dark text-decoration-none">
           <img src="images/bude.jpg" class="rounded-circle logoheader" alt="Foto Bude CateringKu">
           <span class="fs-5 fw-bold me-2 ms-2  text-light">BUDE CateringKu <i class="fad fa-hat-chef"></i></span>
@@ -123,7 +123,8 @@
   <!-- produk bag 1 -->
   <section class="container px-4 py-5">
     <h3 class="p-3 bg-success rounded text-light fw-bold"><i class="fas fa-clipboard-list-check animated-icon"></i> Menu CateringKu</h3>
-    <div class="row">
+
+    <div class="row row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
 
       <div class="col-sm-12 col-md-6 col-lg-4 produk">
         <div class="card shadow mb-4">
@@ -236,22 +237,45 @@
     </div>
   </section>
 
+  <!-- Hubungi -->
+  <div class="container text-success px-4 py-5">
+    <h3 class="p-3 bg-success rounded text-light fw-bold"><i class="fa-solid fa-comment animated-icon"></i> Hubungi</h3>
+  
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+      <div class="col-lg-6">
+        <div class="card container bg-body-tertiary shadow py-5">
+          <div class="card-title fw-bold mt-3 fs-4 text-center">Jangan sungkan bertanya <i class="fa-regular fa-face-smile-wink"></i></div>
+           <div class="card-body">
+            <form id="questionForm">
+              <label for="name">Nama:<span class="text-danger">*</span></label><br>
+              <input class="form-control shadow-sm" type="text" id="name" name="name" placeholder="Nama Anda" required><br><br>
+              
+              <label for="question">Pertanyaan:<span class="text-danger">*</span></label><br>
+              <textarea class="form-control shadow-sm" id="question" name="question" placeholder="Tulis pertanyaan" required></textarea><br><br>
+              
+              <button type="submit" class="btn btn-success"><i class="bi bi-whatsapp me-1"></i>Kirim pertanyaan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="position-relative">
+          <img src="images/bude-white.jpg" alt="Umi M. Chamdani" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </div>  
+
   <!-- penutup -->
 <section>
   <div class="container">
     <div class="position-relative overflow-hidden text-center bg-success penutup">
       <div class="p-sm-4 p-md-4 p-lg-4 mx-auto my-4">
-        <img src="images/bude-white.jpg" class="rounded-circle logo" alt="Foto Umi M. Chamdani">
-
-        <div class="d-flex justify-content-center align-items-center mx-auto gap-2 mt-0">
-          <a href="https://www.facebook.com/umi.m.chamdani" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f text-light fs-3"></i></a>
-          <a href="https://www.tiktok.com/@umichamdani" target="_blank" rel="noopener noreferrer"><i class="bi bi-tiktok text-light fs-3"></i></a>
-        </div>
 
         <div class="text-center mx-auto">
-        <p class="fw-normal fs-3 mb-0">Umi M. Chamdani</p>
-        <p class="display-4 fw-normal mt-0 mb-0">BUDE</p>
-        <h2 class="display-4 fw-normal mt-0 mb-0">CateringKu</h2>
+        <span class="bg-white text-dark p-1 rounded fw-normal fs-3 mb-2">Umi M. Chamdani</span><br>
+        <span class="display-4 fw-normal mt-2 mb-0">BUDE</span><br>
+        <span class="display-4 fw-normal mt-0 mb-0">CateringKu</span>
         </div>
 
         <div class="d-flex mx-auto justify-content-center">
@@ -262,8 +286,8 @@
           <i class="bi bi-star-fill"></i>
         </div>
 
-        <p class="fs-3 p-2">Realisasikan impian Anda untuk acara yang luar biasa dengan menyediakan makanan yang lezat dan layanan catering dari BUDE CateringKu.</p>
-        <i class="fa-sharp fa-solid fa-map-pin animated-icon"></i>
+        <span class="fs-3 p-2">Realisasikan impian Anda untuk acara yang luar biasa dengan menyediakan makanan yang lezat dan layanan catering dari BUDE CateringKu.</span><br>
+        <i class="fa-sharp fa-solid fa-map-pin animated-icon mt-5"></i>
         <address>
           <strong>BUDE CateringKu<br>Citeureup - Bogor</strong>
         </address>
@@ -282,11 +306,13 @@
   <div class="container">
     <footer class="py-1" role="contentinfo">
 
-      <div class="d-flex flex-column flex-sm-row justify-content-between py-1 my-1 footer-atas">
-        <p>&copy; <script>document.write(new Date().getFullYear())</script> <a style="text-decoration: none;" href="https://cateringku.eu.org/"><span
-              class="text-success me-1 ms-1 fw-bold">BUDE CateringKu.</span></a></p>
+      <div class="d-flex flex-column flex-sm-row py-1 my-1 footer-atas align-items-center justify-content-between">
+        <p class="m-0">&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://cateringku.eu.org/" class="text-success fw-bold text-decoration-none">BUDE CateringKu.</a></p>
 
-        <p class="text-secondary">made with<i class="bi bi-heart-fill text-danger ms-1 me-1 footer-bawah"></i>design by.<a style="text-decoration: none;" href="https://condrock.eu.org" target="_blank"><span class="text-secondary"> Cond Rock.</span></a></p>
+        <div class="mt-2">
+          <a href="https://www.facebook.com/umi.m.chamdani" target="_blank" rel="noopener noreferrer" class="text-light me-3"><i class="fab fa-facebook-f fs-3"></i></a>
+          <a href="https://www.tiktok.com/@umichamdani" target="_blank" rel="noopener noreferrer" class="text-light"><i class="fab fa-tiktok fs-3"></i></a>
+        </div>
       </div>
 
     </footer>
@@ -294,14 +320,12 @@
 </section>
 
 <!-- javascript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"></script>
-
-  <script src="script.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/gh/condrock/js-protect-select@main/js-protect-select.js"></script>
-    
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script>document.addEventListener("DOMContentLoaded",(function(){document.getElementById("questionForm").addEventListener("submit",(function(e){var n=document.getElementById("name").value,t=document.getElementById("question").value;if(n&&t){var a="https://wa.me/6281381170701/?text="+("Nama: "+encodeURIComponent(n)+"%0APertanyaan: "+encodeURIComponent(t));window.open(a,"_blank")}else alert("Harap lengkapi semua kolom sebelum mengirim."),e.preventDefault()}))}));</script>
+<script src="https://cdn.jsdelivr.net/gh/condrock/js-protect-select@main/js-protect-select.js"></script>
+  
 </body>
 
 </html>
